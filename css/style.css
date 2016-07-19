@@ -41,6 +41,9 @@ html, body, .container, .header {
 .parag{
     font-size: 32px;
     font-family: 'Poiret One', cursive;
+    text-align: center;
+    padding-bottom: 34px;
+
 }
 .bg-img {
 	position: absolute;
