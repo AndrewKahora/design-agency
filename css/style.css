@@ -46,6 +46,9 @@ html, body, .container, .header {
     padding-top: 45px;
 
 }
+.codrops-demos{
+    display: ;
+}
 .menu__item {
 	display: block;
 	margin: 1em 0;
@@ -55,7 +58,7 @@ html, body, .container, .header {
 	font-size: 1.05em;
 	font-weight: bold;
 	display: block;
-	padding: 1em;
+	padding: .5em;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -84,6 +87,12 @@ html, body, .container, .header {
 	color: #b5b5b5;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+}
+
+.portfolio{
+    text-align: center;
+    color: aquamarine;
+    font-size: 34px;
 }
 
 .menu--francisco .menu__link:hover,
