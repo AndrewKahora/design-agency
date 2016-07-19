@@ -46,15 +46,20 @@ html, body, .container, .header {
 	top: 0;
 	left: 0;
 	display: block;
-	min-width: 100%;
-	min-height: 100%;
-     background-size: contain;
+	width: 100%;
+    height: inherit;
+
 }
 .image1{
      position: static;
      background-size: cover;
 }
-
+.nav2{
+    text-align: center;
+    color: #6bd0ae;
+    font-size: 23px;
+    word-spacing: 5px;
+}
 .title {
 	z-index: 1000;
 	margin: 0 auto;
