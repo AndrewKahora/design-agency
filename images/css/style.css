@@ -140,6 +140,7 @@ html, body, .container, .header {
 .details{
     text-align: center;
     font-size: 27px;
+    padding-bottom: 45px;
 }
 
 .menu__link:hover,
