@@ -142,7 +142,10 @@ html, body, .container, .header {
     font-size: 27px;
     padding-bottom: 45px;
 }
-
+.footer img{
+    width: 23px;
+    height: 23px;
+}
 .menu__link:hover,
 .menu__link:focus {
 	outline: none;
