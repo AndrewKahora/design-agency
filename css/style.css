@@ -203,13 +203,17 @@ html, body, .container, .header {
      position: static;
      background-size: cover;
 }
-.nav2{
+.nav2 {
     text-align: center;
     color: #6bd0ae;
     font-size: 23px;
     word-spacing: 5px;
     font-family: 'Poiret One', cursive;
-    display: inline-block;
+    padding-top: 45px;
+}
+#potfolio{
+    width: 400px;
+    height: 306.8px;
 }
 .title {
 	z-index: 1000;
