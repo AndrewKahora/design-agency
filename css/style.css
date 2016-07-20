@@ -110,6 +110,11 @@ html, body, .container, .header {
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 }
+.Contacts{
+    font-size: 34px;
+    text-align: center;
+    color: aquamarine;
+}
 
 .menu__link:hover,
 .menu__link:focus {
