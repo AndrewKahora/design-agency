@@ -162,7 +162,19 @@ width: 50%;
     text-align: center;
 
 }
-#iconz fa{
+#iconz{
+    width: 34px;
+    height: 34px;
+}
+.fa fa-facebook-official{
+     width: 34px;
+    height: 34px;
+}
+.fa fa-twitter{
+    width: 34px;
+    height: 34px;
+}
+.fa fa-instagram{
     width: 34px;
     height: 34px;
 }
