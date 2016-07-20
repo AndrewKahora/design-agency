@@ -90,7 +90,7 @@ if ( typeof define === 'function' && define.amd ) {
 		var speed = 250,
 			easing = mina.easeinout;
 
-		[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+		[].slice.call ( document.querySelectorAll( '#grid1 > a' ) ).forEach( function( el ) {
 			var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
 				pathConfig = {
 					from : path.attr( 'd' ),

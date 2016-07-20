@@ -244,7 +244,7 @@ html, body, .container, .header {
 	opacity: 0.7;
 	transition: opacity 0.3s;
 }
-.grid figcaption {
+.grid1 figcaption {
 	position: absolute;
 	top: 0;
 	z-index: 11;
@@ -253,7 +253,7 @@ html, body, .container, .header {
 	height: 100%;
 	text-align: center;
 }
-.grid figcaption h2 {
+.grid1 figcaption h2 {
 	margin: 0 0 20px 0;
 	color: #3498db;
 	text-transform: uppercase;
@@ -263,13 +263,13 @@ html, body, .container, .header {
 	transition: transform 0.3s;
 }
 
-.grid figcaption p {
+.grid1 figcaption p {
 	padding: 0 20px;
 	color: #aaa;
 	font-weight: 300;
 	transition: opacity 0.3s, transform 0.3s;
 }
-.grid figcaption h2 {
+.grid1 figcaption h2 {
 	margin: 0 0 20px 0;
 	color: #3498db;
 	text-transform: uppercase;
@@ -279,18 +279,18 @@ html, body, .container, .header {
 	transition: transform 0.3s;
 }
 
-.grid figcaption p {
+.grid1 figcaption p {
 	padding: 0 20px;
 	color: #aaa;
 	font-weight: 300;
 	transition: opacity 0.3s, transform 0.3s;
 }
-.grid figcaption h2,
-.grid figcaption p {
+.grid1 figcaption h2,
+.grid1 figcaption p {
 	transform: translateY(50px);
 }
 
-.grid figure button {
+.grid1 figure button {
 	position: absolute;
 	padding: 4px 20px;
 	border: none;
@@ -300,14 +300,14 @@ html, body, .container, .header {
 	transition: opacity 0.3s, transform 0.3s;
 }
 
-.grid figcaption,
-.grid figcaption h2,
-.grid figcaption p,
-.grid figure button {
+.grid1 figcaption,
+.grid1 figcaption h2,
+.grid1 figcaption p,
+.grid1 figure button {
 	backface-visibility: hidden;
 }
 
-.grid svg {
+.grid1 svg {
 	position: absolute;
 	top: -1px; /* fixes rendering issue in FF */
 	z-index: 10;
@@ -315,20 +315,20 @@ html, body, .container, .header {
 	height: 100%;
 }
 
-.grid svg path {
+.grid1 svg path {
 	fill: #fff;
 }
 
-.grid a:hover figure img {
+.grid1 a:hover figure img {
 	opacity: 1;
 }
 
-.grid a:hover figcaption h2,
-.grid a:hover figcaption p {
+.grid1 a:hover figcaption h2,
+.grid1 a:hover figcaption p {
 	transform: translateY(0);
 }
 
-.grid a:hover figcaption p {
+.grid1 a:hover figcaption p {
 	opacity: 0;
 }
 
@@ -336,8 +336,8 @@ html, body, .container, .header {
 	background: #3498db;
 }
 
-.demo-1 .grid figure button,
-.demo-3 .grid figure button {
+.demo-1 .grid1 figure button,
+.demo-3 .grid1 figure button {
 	top: 50%;
 	left: 50%;
 	border: 3px solid #fff;
@@ -347,8 +347,8 @@ html, body, .container, .header {
 	transform: translateY(-50%) translateX(-50%) scale(0.25);
 }
 
-.demo-1 .grid a:hover figure button,
-.demo-3 .grid a:hover figure button {
+.demo-1 .grid1 a:hover figure button,
+.demo-3 .grid1 a:hover figure button {
 	opacity: 1;
 	transform: translateY(-50%) translateX(-50%) scale(1);
 }
@@ -357,15 +357,15 @@ html, body, .container, .header {
 	background: #e74c3c;
 }
 
-.demo-2 .grid figcaption h2 {
+.demo-2 .grid1 figcaption h2 {
 	color: #e74c3c;
 }
 
-.demo-2 .grid figcaption p {
+.demo-2 .grid1 figcaption p {
 	transition-delay: 0.05s;
 }
 
-.demo-2 .grid figure button {
+.demo-2 .grid1 figure button {
 	bottom: 0;
 	left: 0;
 	padding: 15px;
@@ -376,11 +376,90 @@ html, body, .container, .header {
 	transform: translateY(100%);
 }
 
-.demo-2 .grid a:hover figure button {
+.demo-2 .grid1 a:hover figure button {
 	transition-timing-function: ease-out;
 	transform: translateY(0);
 }
+.demo-2 .grid1 figcaption h2,
+.demo-2 .grid1 figcaption p,
+.demo-3 .grid1 figcaption h2,
+.demo-3 .grid1 figcaption p {
+	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
 
+.demo-2 .grid1 a:hover figcaption p,
+.demo-3 .grid1 a:hover figcaption p {
+	transition-delay: 0s;
+	transition-duration: 0.1s;
+}
+
+.demo-3 body {
+	background: #52be7f;
+}
+
+.demo-3 .grid1 figcaption h2 {
+	color: #52be7f;
+}
+
+.demo-3 .grid1 a:hover figcaption h2 {
+	transform: translateY(5px);
+}
+@media screen and (max-width: 58em) {
+	.grid1 a {
+		width: 33.333%;
+	}
+
+	.grid1 a:nth-child(odd) {
+		margin: 0;
+	}
+
+	.grid1 a:nth-child(3n-1) {
+		margin: 30px 0 -30px 0;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.grid1 {
+		max-width: 500px;
+	}
+
+	.grid1 a {
+		width: 50%;
+	}
+
+	.grid1 a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.grid1 a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.grid1 figcaption h2 {
+		margin-bottom: 0px;
+		transform: translateY(30px);
+	}
+
+	.grid1 figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.grid1 {
+		max-width: 250px;
+	}
+
+	.grid1 a {
+		width: 100%;
+	}
+
+	.grid1 a:nth-child(even) {
+		margin: 0;
+	}
+}
 
 .title {
 	z-index: 1000;
