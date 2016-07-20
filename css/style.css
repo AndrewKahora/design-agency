@@ -93,6 +93,8 @@ html, body, .container, .header {
     text-align: center;
     color: aquamarine;
     font-size: 34px;
+    padding-top: 55px;
+    padding-bottom: 23px;
 }
 
 .menu--francisco .menu__link:hover,
