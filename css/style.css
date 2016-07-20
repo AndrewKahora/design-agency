@@ -142,11 +142,29 @@ html, body, .container, .header {
     font-size: 27px;
     padding-bottom: 45px;
 }
+.footer {
+    width: 100%;
+}
+.left, .right{
+width: 50%;
+}
+.right{
+    width: 50%;
+    float: right;
+}
+.left{
+    width: 50%;
+    float: left;
+}
 .footer img{
     width: 43px;
     height: 43px;
     text-align: center;
 
+}
+#iconz fa{
+    width: 34px;
+    height: 34px;
 }
 .menu__link:hover,
 .menu__link:focus {
