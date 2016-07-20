@@ -269,6 +269,118 @@ html, body, .container, .header {
 	font-weight: 300;
 	transition: opacity 0.3s, transform 0.3s;
 }
+.grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+	transition: transform 0.3s;
+}
+
+.grid figcaption p {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	transition: opacity 0.3s, transform 0.3s;
+}
+.grid figcaption h2,
+.grid figcaption p {
+	transform: translateY(50px);
+}
+
+.grid figure button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+	backface-visibility: hidden;
+}
+
+.grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.grid svg path {
+	fill: #fff;
+}
+
+.grid a:hover figure img {
+	opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+	transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+	opacity: 0;
+}
+
+.demo-1 body {
+	background: #3498db;
+}
+
+.demo-1 .grid figure button,
+.demo-3 .grid figure button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.demo-1 .grid a:hover figure button,
+.demo-3 .grid a:hover figure button {
+	opacity: 1;
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.demo-2 body {
+	background: #e74c3c;
+}
+
+.demo-2 .grid figcaption h2 {
+	color: #e74c3c;
+}
+
+.demo-2 .grid figcaption p {
+	transition-delay: 0.05s;
+}
+
+.demo-2 .grid figure button {
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	background: #fff;
+	color: #333;
+	font-weight: 300;
+	transform: translateY(100%);
+}
+
+.demo-2 .grid a:hover figure button {
+	transition-timing-function: ease-out;
+	transform: translateY(0);
+}
+
 
 .title {
 	z-index: 1000;
