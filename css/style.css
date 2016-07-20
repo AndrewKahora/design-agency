@@ -137,6 +137,10 @@ html, body, .container, .header {
     text-align: center;
     color: aquamarine;
 }
+.details{
+    text-align: center;
+    font-size: 27px;
+}
 
 .menu__link:hover,
 .menu__link:focus {
